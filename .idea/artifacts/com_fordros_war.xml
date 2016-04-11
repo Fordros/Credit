@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="com.fordros:war">
+    <output-path>$PROJECT_DIR$/ServletHIbernateJSP-master/target</output-path>
+    <root id="archive" name="servletexam.war">
+      <element id="artifact" artifact-name="com.fordros:war exploded" />
+    </root>
+  </artifact>
+</component>
