@@ -1,7 +1,6 @@
 package com.fordros.DAO;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
 import java.util.List;
 
 import com.fordros.persistence.HibernateUtil;
@@ -44,7 +43,7 @@ import org.hibernate.Session;
             return t;
         }
 
-        public T findByID(Class clazz, BigDecimal id) {
+        public T findByID(Class clazz, Integer id) {
             Session hibernateSession = this.getSession();
             T t = null;
             t = (T) hibernateSession.get(clazz, id);

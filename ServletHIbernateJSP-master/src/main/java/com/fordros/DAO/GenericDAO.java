@@ -4,7 +4,6 @@ package com.fordros.DAO;
  * Created by Fordros on 22.03.2016.
  */
 import java.io.*;
-import java.math.BigDecimal;
 import java.util.*;
 import org.hibernate.Query;
 
@@ -22,5 +21,5 @@ public interface GenericDAO<T, ID extends Serializable> {
 
     public List findAll(Class clazz);
 
-    public T findByID(Class clazz, BigDecimal id);
+    public T findByID(Class clazz, Integer id);
 }

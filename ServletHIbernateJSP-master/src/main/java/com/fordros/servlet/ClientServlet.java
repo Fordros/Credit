@@ -1,21 +1,16 @@
 package com.fordros.servlet;
 
 
-import com.fordros.entity.Addr;
-import com.fordros.entity.Client;
-import com.fordros.session.ClientManager;
-import com.fordros.session.ClientManagerImpl;
+import com.fordros.entity.Account;
+import com.fordros.entity.Payments;
+import com.fordros.session.AccountManager;
+import com.fordros.session.AccountManagerImpl;
 
-import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -23,15 +18,15 @@ import java.util.List;
  */
 
 public class ClientServlet extends HttpServlet {
-    ClientManager clientManager = new ClientManagerImpl();
+    AccountManager accountManager = new AccountManagerImpl();
 
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
 
-        List<Client> clients = clientManager.loadAllClients();
-        req.setAttribute("client", clients);
+        //List<Account> accounts = accountManager.loadAllAcc();
+        //req.setAttribute("account", accounts);
         req.getRequestDispatcher("client.jsp").forward(req, resp);
     }
 
@@ -40,22 +35,25 @@ public class ClientServlet extends HttpServlet {
             throws ServletException, IOException {
         req.setCharacterEncoding ("UTF-8");
 
-        String firstName = req.getParameter("firstName");
-        String lastName = req.getParameter("lastName");
-        String phone = req.getParameter("phone");
+//        String firstName = req.getParameter("firstName");
+//        String lastName = req.getParameter("lastName");
+//        String phone = req.getParameter("phone");
+//
+//        Account account = new Account();
+//        account.setAccountNumber(req.getParameter("accNumber"));
+//
+////        payments.setCity(req.getParameter("city"));
+//        payments.setStreet(req.getParameter("street"));
+//        payments.setBuilding(req.getParameter("building"));
+//        payments.setApartment(req.getParameter("apartment"));
+//
+//        Account account = new Account(firstName,lastName,phone, payments);
+//        payments.setAccount(account);
+//       accountManager.saveNewClient(account);
 
-        Addr addr = new Addr();
-        addr.setCountry(req.getParameter("country"));
-        addr.setCity(req.getParameter("city"));
-        addr.setStreet(req.getParameter("street"));
-        addr.setBuilding(req.getParameter("building"));
-        addr.setApartment(req.getParameter("apartment"));
-
-        Client client = new Client(firstName,lastName,phone, addr);
-        addr.setClient(client);
-       clientManager.saveNewClient(client);
-
-        resp.sendRedirect("client");
+        Account account = accountManager.findByAccNumber(req.getParameter("accNumber"));
+        System.out.println(account);
+        resp.sendRedirect("account");
 
 
     }

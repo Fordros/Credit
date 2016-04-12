@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>Форма добавления нового клиента</h1>
-<form action="client.jsp" method="post">
+<form action="account.jsp" method="post">
     <input type="text" maxlength="25" placeholder="Ваше имя" required><br>
     <input type="text" maxlength="25" placeholder="Ваша Фамилия" required><br>
     <input type="tel" maxlength="12" placeholder="Ваш номер телефона" required><br>

@@ -70,7 +70,7 @@
     </dependency>
     </dependencies>
     <build>
-        <finalName>servletexam</finalName>
+        <finalName>creditCalc</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>

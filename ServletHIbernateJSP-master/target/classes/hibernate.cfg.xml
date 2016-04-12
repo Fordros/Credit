@@ -13,8 +13,8 @@
         <property name="hibernate.current_session_context_class">thread</property>
         <property name="show_sql">true</property>
 
-        <mapping class="com.fordros.entity.Client"/>
-        <mapping class="com.fordros.entity.Addr"/>
+        <mapping class="com.fordros.entity.Account"/>
+        <mapping class="com.fordros.entity.Payments"/>
 
 
     </session-factory>

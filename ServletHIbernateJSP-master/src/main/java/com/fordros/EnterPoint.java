@@ -1,10 +1,17 @@
 package com.fordros;
 
-import com.fordros.DAO.ClientDAO;
-import com.fordros.DAO.ClientDAOImpl;
-import com.fordros.entity.Addr;
-import com.fordros.entity.Client;
+import com.fordros.DAO.AccountDAO;
+import com.fordros.DAO.AccountDAOImpl;
+import com.fordros.DAO.PaymentsDAO;
+import com.fordros.DAO.PaymentsDAOImpl;
+import com.fordros.entity.Account;
+import com.fordros.entity.Payments;
 import com.fordros.persistence.HibernateUtil;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.Set;
 
 /**
  * Created by Fordros on 21.03.2016.
@@ -12,50 +19,39 @@ import com.fordros.persistence.HibernateUtil;
 public class EnterPoint {
 
     public static void main(String[] args) {
-//        ClientManager clientManager = new ClientManagerImpl();
-//        Client client = new Client();
-//        client.setAccountNumber("Владимир");
-//        client.setBalance("Воля");
-//        client.setCreditLimit("0675309696");
-//        clientManager.saveNewClient(client);
+        SimpleDateFormat format = new SimpleDateFormat("dd.MM.yyyy HH:mm");
+        GregorianCalendar calen = new GregorianCalendar(2017, 3, 12);
 
-//        List<Client> clients = clientManager.loadAllClients();
-//        System.out.println(clients);
+        AccountDAO accountDAO = new AccountDAOImpl();
+        PaymentsDAO paymentsDAO = new PaymentsDAOImpl();
 
-//        AddrManager addrManager = new AddrManagerImpl();
-//        Addr addr  = new Addr();
-//        addr.setCountry("Украина");
-//        addr.setCity("Кременуг");
-//        addr.setStreet("Тельмана");
-//        addr.setBuilding("28");
-//        addr.setApartment("63");
-//
-//        //addrManager.saveNewAddr(addr);
-//        System.out.println(addr);
-//
-//        List<Addr> addrs = addrManager.loadAllAddr();
-//      System.out.println(addrs);
-        ClientDAO clientDAO = new ClientDAOImpl();
+        Account account = new Account();
+
+        account.setAccountNumber("26250116102980001");
+        account.setBalance(1234);
+        account.setCreditLimit(1000);
+        account.setSsn(1234567891);
+        account.setLimitTerminationDate(calen.getTime());
+        account.setLimitDecreaseDate(calen.getTime());
+        account.setPercentDebtDue(12);
+        account.setPercentPastDue(60);
 
 
-        Client client = new Client();
-        client.setAccountNumber("Ростислав");
-        client.setBalance("Иващенко");
-        client.setCreditLimit("0675404060");
+        Payments payment = new Payments();
+        payment.setAccountNumber("26250116102980001");
+        payment.setAmount(200);
+        payment.setDatePayment(new Date());
 
-        Addr addr = new Addr();
-        addr.setCountry("Украина");
-        addr.setCity("Кременуг");
-        addr.setStreet("Тельмана");
-        addr.setBuilding("28");
-        addr.setApartment("63");
+        account.addPayments(payment);
 
-        client.setAddr(addr);
-        addr.setClient(client);
+        payment.setAccount(account);
 
         HibernateUtil.beginTransaction();
-        clientDAO.save(client);
+
+        accountDAO.save(account);
+        paymentsDAO.save(payment);
         HibernateUtil.commitTransaction();
+
     }
 
 }
