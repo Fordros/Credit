@@ -34,7 +34,6 @@ public class ClientServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         req.setCharacterEncoding ("UTF-8");
-
 //        String firstName = req.getParameter("firstName");
 //        String lastName = req.getParameter("lastName");
 //        String phone = req.getParameter("phone");

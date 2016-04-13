@@ -2,131 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95a6ab57-c3f1-411a-bcdd-5b77d9c1cd10" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/AccountDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/AccountDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/PaymentsDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/PaymentsDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/AccountManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/PaymentManager.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/out/artifacts/ServletWithHibernate_Web_exploded/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/out/artifacts/ServletWithHibernate_Web_exploded/WEB-INF/classes/Client.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/out/artifacts/ServletWithHibernate_Web_exploded/WEB-INF/classes/com/fordros/DAO/ClientDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/out/artifacts/ServletWithHibernate_Web_exploded/WEB-INF/classes/com/fordros/DAO/ClientDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/out/artifacts/ServletWithHibernate_Web_exploded/WEB-INF/classes/com/fordros/DAO/GenericDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/out/artifacts/ServletWithHibernate_Web_exploded/WEB-INF/classes/com/fordros/DAO/GenericDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/out/artifacts/ServletWithHibernate_Web_exploded/WEB-INF/classes/com/fordros/EnterPoint.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/out/artifacts/ServletWithHibernate_Web_exploded/WEB-INF/classes/com/fordros/crud/AddrService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/out/artifacts/ServletWithHibernate_Web_exploded/WEB-INF/classes/com/fordros/entity/Addr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/out/artifacts/ServletWithHibernate_Web_exploded/WEB-INF/classes/com/fordros/entity/Client.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/out/artifacts/ServletWithHibernate_Web_exploded/WEB-INF/classes/com/fordros/persistence/HibernateUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/out/artifacts/ServletWithHibernate_Web_exploded/WEB-INF/classes/com/fordros/persistence/HubernateUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/out/artifacts/ServletWithHibernate_Web_exploded/WEB-INF/classes/com/fordros/servlet/ClientService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/out/artifacts/ServletWithHibernate_Web_exploded/WEB-INF/classes/com/fordros/servlet/ClientServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/out/artifacts/ServletWithHibernate_Web_exploded/WEB-INF/classes/com/fordros/session/ClientManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/out/artifacts/ServletWithHibernate_Web_exploded/WEB-INF/classes/com/fordros/session/ClientManagerImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/out/artifacts/ServletWithHibernate_Web_exploded/WEB-INF/classes/hibernate.cfg.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/out/artifacts/ServletWithHibernate_Web_exploded/client.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/out/artifacts/ServletWithHibernate_jar/ServletWithHibernate.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/AddrDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/AddrDAOImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/ClientDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/ClientDAOImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/AddrManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/ClientManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/DAO/AddrDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/DAO/AddrDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/DAO/ClientDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/DAO/ClientDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/entity/Addr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/entity/Client.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/session/AddrManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/session/AddrManagerImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/session/ClientManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/session/ClientManagerImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/classes/com/fordros/DAO/AddrDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/classes/com/fordros/DAO/AddrDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/classes/com/fordros/DAO/ClientDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/classes/com/fordros/DAO/ClientDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/classes/com/fordros/DAO/GenericDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/classes/com/fordros/DAO/GenericDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/classes/com/fordros/EnterPoint.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/classes/com/fordros/entity/Addr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/classes/com/fordros/entity/Client.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/classes/com/fordros/persistence/HibernateUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/classes/com/fordros/servlet/ClientServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/classes/com/fordros/session/AddrManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/classes/com/fordros/session/AddrManagerImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/classes/com/fordros/session/ClientManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/classes/com/fordros/session/ClientManagerImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/classes/hibernate.cfg.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/lib/antlr-2.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/lib/bootstrap-3.2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/lib/dom4j-1.6.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/lib/hamcrest-core-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/lib/hibernate-commons-annotations-4.0.2.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/lib/hibernate-core-4.2.15.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/lib/hibernate-entitymanager-4.2.15.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/lib/javassist-3.18.1-GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/lib/jboss-logging-3.1.0.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/lib/jquery-2.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/lib/junit-4.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/lib/postgresql-9.3-1102-jdbc41.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/client.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/servletexam/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/surefire-reports/ClientServiceTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/surefire-reports/TEST-ClientServiceTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/test-classes/ClientServiceTest.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/CreditDebt.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/test/java/CreditDebtTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/test/java/FullCalcTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/DAO/GenericDAO.class" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/DAO/GenericDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/DAO/GenericDAOImpl.class" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/DAO/GenericDAOImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/EnterPoint.class" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/EnterPoint.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/servlet/ClientServlet.class" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/servlet/ClientServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/com_fordros_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/com_fordros_war.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/com_fordros_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/com_fordros_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/pom.xml" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/GenericDAO.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/GenericDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/GenericDAOImpl.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/GenericDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/com.fordros.iml" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/com.fordros.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/PaymentsDAO.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/PaymentsDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/PaymentsDAOImpl.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/PaymentsDAOImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/EnterPoint.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/EnterPoint.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Account.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Account.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Payments.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Payments.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/servlet/ClientServlet.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/servlet/ClientServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/resources/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/web/client.jsp" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/web/client.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/client.jsp" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/client.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/maven-archiver/pom.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Addr.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Payments.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Client.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Account.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/AddrManagerImpl.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/PaymentManagerImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/ClientManagerImpl.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/AccountManagerImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/test/java/ClientServiceTest.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/test/java/AccountServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/PaymentManager.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/PaymentManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/PaymentManagerImpl.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/PaymentManagerImpl.java" />
     </list>
     <ignored path="Credit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -198,37 +90,96 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ClientServlet.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/servlet/ClientServlet.java">
+      <file leaf-file-name="FullCalcTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/test/java/FullCalcTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8777174">
-              <caret line="29" column="66" selection-start-line="28" selection-start-column="10" selection-end-line="29" selection-end-column="66" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="64" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnterPoint.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/EnterPoint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+      <file leaf-file-name="postgres.public.account" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/9d719688/4fccb991-bd69-47aa-a98e-a22b769948fe/postgres.public.account">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/client.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
-              <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
+      <file leaf-file-name="postgres.public.payments" pinned="false" current-in-tab="true">
+        <entry file="dbDummy://dbtable:/9d719688/4fccb991-bd69-47aa-a98e-a22b769948fe/postgres.public.payments">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Account.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="44" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1121#1122#0" expanded="true" />
+                <element signature="e#1146#1147#0" expanded="true" />
+                <element signature="e#3590#3591#0" expanded="true" />
+                <element signature="e#3626#3627#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Payments.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Payments.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1431#1432#0" expanded="true" />
+                <element signature="e#1461#1462#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -245,20 +196,26 @@
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Client.java" />
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/ClientDAO.java" />
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/ClientDAOImpl.java" />
-        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/PaymentManager.java" />
-        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/PaymentManagerImpl.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4fccb991-bd69-47aa-a98e-a22b769948fe/console.sql" />
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/AccountManager.java" />
-        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Account.java" />
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/AccountManagerImpl.java" />
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/AccountDAO.java" />
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/AccountDAOImpl.java" />
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/test/java/AccountServiceTest.java" />
-        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/EnterPoint.java" />
-        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Payments.java" />
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/pom.xml" />
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/client.jsp" />
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/servlet/ClientServlet.java" />
+        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/CreditDebt.java" />
+        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/test/java/CreditDebtTest.java" />
+        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/PaymentManager.java" />
+        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/GenericDAO.java" />
+        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/PaymentsDAO.java" />
+        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/test/java/FullCalcTest.java" />
+        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/PaymentManagerImpl.java" />
+        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/PaymentsDAOImpl.java" />
+        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Account.java" />
+        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/EnterPoint.java" />
+        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Payments.java" />
       </list>
     </option>
   </component>
@@ -348,9 +305,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -400,26 +354,8 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Credit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Credit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ServletHIbernateJSP-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -441,11 +377,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -468,14 +404,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -565,6 +493,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="session" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Credit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Credit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServletHIbernateJSP-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fordros" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="servlet" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -603,8 +565,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Credit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Credit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServletHIbernateJSP-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fordros" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DAO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -617,7 +616,70 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.29310346" />
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat">
+  <component name="RunManager" selected="Application.EnterPoint">
+    <configuration default="false" name="CreditDebtTest.calculationDebtsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="com.fordros" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CreditDebtTest" />
+      <option name="METHOD_NAME" value="calculationDebtsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CreditDebtTest.calcPercentPastDueDebtsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="com.fordros" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CreditDebtTest" />
+      <option name="METHOD_NAME" value="calcPercentPastDueDebtsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CreditDebtTest.isBillingDateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="com.fordros" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CreditDebtTest" />
+      <option name="METHOD_NAME" value="isBillingDateTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="false" name="EnterPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -626,9 +688,9 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.fordros.EnterPoint" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -638,14 +700,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="AccountServiceTest.findByAccTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="FullCalcTest.fullAccTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="com.fordros" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AccountServiceTest" />
-      <option name="METHOD_NAME" value="findByAccTest" />
+      <option name="MAIN_CLASS_NAME" value="FullCalcTest" />
+      <option name="METHOD_NAME" value="fullAccTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1232,15 +1294,21 @@
       </ConfigurationWrapper>
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Application.EnterPoint" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.AccountServiceTest.findByAccTest" />
-      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.Tomcat" />
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CreditDebtTest.calculationDebtsTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CreditDebtTest.calcPercentPastDueDebtsTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CreditDebtTest.isBillingDateTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.EnterPoint" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.FullCalcTest.fullAccTest" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AccountServiceTest.findByAccTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.EnterPoint" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.EnterPoint" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FullCalcTest.fullAccTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CreditDebtTest.isBillingDateTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CreditDebtTest.calcPercentPastDueDebtsTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CreditDebtTest.calculationDebtsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1259,35 +1327,45 @@
       <option name="number" value="Default" />
       <updated>1460399752741</updated>
       <workItem from="1460399753832" duration="3821000" />
-      <workItem from="1460439604832" duration="21849000" />
+      <workItem from="1460439604832" duration="22442000" />
+      <workItem from="1460533721543" duration="18172000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AccountServiceTest_findByAccTest - 2016.04.12 at 17h 46m 46s.xml">
-      <configuration name="AccountServiceTest.findByAccTest" configurationId="JUnit" />
+    <history-entry file="FullCalcTest_fullAccTest - 2016.04.13 at 15h 22m 11s.xml">
+      <configuration name="FullCalcTest.fullAccTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountServiceTest_findByAccTest - 2016.04.12 at 17h 47m 12s.xml">
-      <configuration name="AccountServiceTest.findByAccTest" configurationId="JUnit" />
+    <history-entry file="FullCalcTest_fullAccTest - 2016.04.13 at 15h 26m 33s.xml">
+      <configuration name="FullCalcTest.fullAccTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountServiceTest_findByAccTest - 2016.04.12 at 17h 47m 56s.xml">
-      <configuration name="AccountServiceTest.findByAccTest" configurationId="JUnit" />
+    <history-entry file="FullCalcTest_fullAccTest - 2016.04.13 at 15h 27m 13s.xml">
+      <configuration name="FullCalcTest.fullAccTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountServiceTest_findByAccTest - 2016.04.12 at 17h 50m 58s.xml">
-      <configuration name="AccountServiceTest.findByAccTest" configurationId="JUnit" />
+    <history-entry file="FullCalcTest_fullAccTest - 2016.04.13 at 15h 27m 29s.xml">
+      <configuration name="FullCalcTest.fullAccTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountServiceTest_findByAccTest - 2016.04.12 at 17h 52m 06s.xml">
-      <configuration name="AccountServiceTest.findByAccTest" configurationId="JUnit" />
+    <history-entry file="FullCalcTest_fullAccTest - 2016.04.13 at 15h 28m 30s.xml">
+      <configuration name="FullCalcTest.fullAccTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountServiceTest_findByAccTest - 2016.04.12 at 17h 57m 45s.xml">
-      <configuration name="AccountServiceTest.findByAccTest" configurationId="JUnit" />
+    <history-entry file="FullCalcTest_fullAccTest - 2016.04.13 at 15h 29m 16s.xml">
+      <configuration name="FullCalcTest.fullAccTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountServiceTest_findByAccTest - 2016.04.12 at 18h 24m 06s.xml">
-      <configuration name="AccountServiceTest.findByAccTest" configurationId="JUnit" />
+    <history-entry file="FullCalcTest_fullAccTest - 2016.04.13 at 15h 29m 32s.xml">
+      <configuration name="FullCalcTest.fullAccTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FullCalcTest_fullAccTest - 2016.04.13 at 15h 31m 17s.xml">
+      <configuration name="FullCalcTest.fullAccTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FullCalcTest_fullAccTest - 2016.04.13 at 15h 33m 27s.xml">
+      <configuration name="FullCalcTest.fullAccTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FullCalcTest_fullAccTest - 2016.04.13 at 15h 34m 23s.xml">
+      <configuration name="FullCalcTest.fullAccTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25670000" />
+    <option name="totallyTimeSpent" value="44435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -1302,15 +1380,13 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25718608" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35188216" sideWeight="0.49546143" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35188216" sideWeight="0.49546143" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21633889" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1321,6 +1397,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1336,7 +1414,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1345,12 +1423,38 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/servlet/ClientServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/client.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Payments.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1431#1432#0" expanded="true" />
+            <element signature="e#1461#1462#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1369,7 +1473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.576923">
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1377,7 +1480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.4150944">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1385,154 +1487,152 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6335404">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/GenericDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/client.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.516295">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        <state vertical-scroll-proportion="-2.4615386">
+          <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/CreditDebt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/test/java/CreditDebtTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/servlet/ClientServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="61" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/AccountDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36956522">
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/GenericDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6005435">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/AccountManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4888179">
+        <state vertical-scroll-proportion="0.36956522">
           <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/AccountDAO.java">
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/PaymentManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4345048">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.5081522">
+          <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/AccountDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/test/java/AccountServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0163044">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.46195653">
+          <caret line="13" column="77" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/AccountManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.6005435">
           <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/PaymentManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.92391306">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/PaymentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6005435">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/PaymentsDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32336956">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/PaymentsDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2771739">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Payments.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36956522">
-          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1363#1364#0" expanded="true" />
-            <element signature="e#1393#1394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9d719688/4fccb991-bd69-47aa-a98e-a22b769948fe/postgres.public.payments">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-          <column-attributes>
-            <column name="ctid" enabled="false" />
-          </column-attributes>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/test/java/AccountServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35326087">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9d719688/4fccb991-bd69-47aa-a98e-a22b769948fe/postgres.public.account">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/EnterPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6005435">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79532164">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/persistence/HibernateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27493262">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/GenericDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.4045584">
+          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/PaymentsDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6296296">
+          <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/AccountDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6296296">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/PaymentsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2915952">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/session/PaymentManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49571183">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+          <folding>
+            <element signature="e#1010#1020#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1544,36 +1644,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Account.java">
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/test/java/FullCalcTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8233618">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="64" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/client.jsp">
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
-          <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
+        <state vertical-scroll-proportion="0.5964912">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/EnterPoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/servlet/ClientServlet.java">
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Account.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8777174">
-          <caret line="29" column="66" selection-start-line="28" selection-start-column="10" selection-end-line="29" selection-end-column="66" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#3590#3591#0" expanded="true" />
+            <element signature="e#3626#3627#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Payments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1431#1432#0" expanded="true" />
+            <element signature="e#1461#1462#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/9d719688/4fccb991-bd69-47aa-a98e-a22b769948fe/postgres.public.account">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/9d719688/4fccb991-bd69-47aa-a98e-a22b769948fe/postgres.public.payments">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -1,6 +1,8 @@
 package com.fordros.entity;
 
 import javax.persistence.*;
+import javax.persistence.criteria.CriteriaBuilder;
+import java.io.Serializable;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -11,9 +13,10 @@ import java.util.Set;
  */
 @Entity
 @Table(name = "account")
-public class Account {
+public class Account implements Serializable{
 
     private Integer id;
+    private Integer acc_id;
     private Integer ssn;
     private String accountNumber;
     private Integer balance;
@@ -31,14 +34,23 @@ public class Account {
 
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "ACC_ID", unique = true, nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ACC_ID", nullable = false, insertable = true, updatable = true)
     public Integer getId() {
         return id;
     }
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    @Column(name = "FK_ACC_ID", nullable = false, insertable = false, updatable = false)
+    public Integer getAcc_id() {
+        return acc_id;
+    }
+
+    public void setAcc_id(Integer acc_id) {
+        this.acc_id = acc_id;
     }
 
     @Column(name = "ACCOUNT_NUMBER", unique = true, nullable = false, length = 17)
@@ -113,7 +125,7 @@ public class Account {
         this.percentPastDue = percentPastDue;
     }
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "account")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "account")
     public Set<Payments> getPayments() {
         return this.payments;
     }

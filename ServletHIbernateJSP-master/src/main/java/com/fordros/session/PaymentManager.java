@@ -11,6 +11,8 @@ public interface PaymentManager {
 
     public List<Payments> loadAllPayment();
 
+    public List<Payments> findAllPaymentByAcc(Integer idAccount);
+
     public void saveNewPayment(Payments payments);
 
     public void deletePayment(Payments payments);

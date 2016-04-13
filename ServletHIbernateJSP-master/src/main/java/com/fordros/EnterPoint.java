@@ -19,17 +19,16 @@ import java.util.Set;
 public class EnterPoint {
 
     public static void main(String[] args) {
-        SimpleDateFormat format = new SimpleDateFormat("dd.MM.yyyy HH:mm");
-        GregorianCalendar calen = new GregorianCalendar(2017, 3, 12);
+        GregorianCalendar calen = new GregorianCalendar(2021, 0, 3);
+        GregorianCalendar paymentDate = new GregorianCalendar(2016, 2, 1);
 
         AccountDAO accountDAO = new AccountDAOImpl();
-        PaymentsDAO paymentsDAO = new PaymentsDAOImpl();
 
         Account account = new Account();
 
-        account.setAccountNumber("26250116102980001");
-        account.setBalance(1234);
-        account.setCreditLimit(1000);
+        account.setAccountNumber("26250127222980001");
+        account.setBalance(-126671);
+        account.setCreditLimit(156000);
         account.setSsn(1234567891);
         account.setLimitTerminationDate(calen.getTime());
         account.setLimitDecreaseDate(calen.getTime());
@@ -38,18 +37,20 @@ public class EnterPoint {
 
 
         Payments payment = new Payments();
-        payment.setAccountNumber("26250116102980001");
-        payment.setAmount(200);
-        payment.setDatePayment(new Date());
-
+        payment.setAccountNumber("26250127222980001");
+        payment.setAmount(20000);
+        payment.setDatePayment(paymentDate.getTime());
         account.addPayments(payment);
 
-        payment.setAccount(account);
+        Payments payment1 = new Payments();
+        payment1.setAccountNumber("26250127222980001");
+        payment1.setAmount(10000);
+        payment1.setDatePayment(paymentDate.getTime());
+
+        account.addPayments(payment1);
 
         HibernateUtil.beginTransaction();
-
         accountDAO.save(account);
-        paymentsDAO.save(payment);
         HibernateUtil.commitTransaction();
 
     }

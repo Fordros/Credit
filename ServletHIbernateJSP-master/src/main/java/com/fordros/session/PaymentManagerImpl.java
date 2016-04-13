@@ -22,9 +22,22 @@ public class PaymentManagerImpl implements PaymentManager {
             allPaymentses = paymentsDAO.findAll(Payments.class);
             HibernateUtil.commitTransaction();
         } catch (HibernateException ex) {
-            System.out.println("Error in method loadAllPayment" + ex);
+            System.out.println("Error in method loadAllPayment - " + ex);
         }
         return allPaymentses;
+    }
+
+
+    public List<Payments> findAllPaymentByAcc(Integer idAccount) {
+        List<Payments> allPaymentsByAcc = new ArrayList<Payments>();
+        try {
+            HibernateUtil.beginTransaction();
+            allPaymentsByAcc = paymentsDAO.findAllPaymentByAccId(idAccount);
+            HibernateUtil.commitTransaction();
+        } catch (HibernateException ex) {
+            System.out.println("Error in method findAllPaymentByAcc -" + ex);
+        }
+        return allPaymentsByAcc;
     }
 
 

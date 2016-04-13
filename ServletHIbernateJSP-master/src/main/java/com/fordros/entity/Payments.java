@@ -1,6 +1,7 @@
 package com.fordros.entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 
@@ -11,7 +12,7 @@ import java.util.Date;
  */
 @Entity
 @Table(name = "payments")
-public class Payments {
+public class Payments implements Serializable {
     private Integer id;
     private String accountNumber;
     private Integer amount;
@@ -62,7 +63,7 @@ public class Payments {
     }
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "ACC_ID", nullable = false)
+    @JoinColumn(name = "ACC_ID", referencedColumnName = "ACC_ID")
     public Account getAccount() {
         return account;
     }
