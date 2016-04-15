@@ -1,6 +1,6 @@
 package com.fordros.session;
 
-import com.fordros.entity.Payments;
+import com.fordros.entity.Payment;
 
 import java.util.List;
 
@@ -9,11 +9,11 @@ import java.util.List;
  */
 public interface PaymentManager {
 
-    public List<Payments> loadAllPayment();
+    public List<Payment> loadAllPayment();
 
-    public List<Payments> findAllPaymentByAcc(Integer idAccount);
+    public List<Payment> findAllPaymentByAcc(Integer idAccount);
 
-    public void saveNewPayment(Payments payments);
+    public void saveNewPayment(Payment payment);
 
-    public void deletePayment(Payments payments);
+    public void deletePayment(Payment payment);
 }

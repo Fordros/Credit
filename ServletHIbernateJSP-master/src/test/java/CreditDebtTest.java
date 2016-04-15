@@ -9,19 +9,12 @@ import java.util.Date;
 public class CreditDebtTest {
     private CreditDebt creditDebt = new CreditDebt();
 
+    @Test
+    public void calcAllTest(){
 
 
 
-
-
-
-
-
-
-
-
-
-
+    }
 
 
 

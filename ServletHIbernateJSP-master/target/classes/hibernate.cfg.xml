@@ -14,7 +14,7 @@
         <property name="show_sql">true</property>
 
         <mapping class="com.fordros.entity.Account"/>
-        <mapping class="com.fordros.entity.Payments"/>
+        <mapping class="com.fordros.entity.Payment"/>
 
 
     </session-factory>

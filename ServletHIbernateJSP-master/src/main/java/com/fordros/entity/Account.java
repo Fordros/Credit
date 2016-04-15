@@ -1,7 +1,6 @@
 package com.fordros.entity;
 
 import javax.persistence.*;
-import javax.persistence.criteria.CriteriaBuilder;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.HashSet;
@@ -25,7 +24,7 @@ public class Account implements Serializable{
     private Date limitDecreaseDate; //дата уменьшения кредитного лимита
     private Integer percentDebtDue; //процентная ставка на срочную задолженность (тело КЛ)
     private Integer percentPastDue; //процентная ставка на просроченную задолженность (несанкционированный овер)
-    private Set<Payments> payments = new HashSet<>();
+    private Set<Payment> payments = new HashSet<>();
 
 
     public Account(){
@@ -44,7 +43,7 @@ public class Account implements Serializable{
         this.id = id;
     }
 
-    @Column(name = "FK_ACC_ID", nullable = false, insertable = false, updatable = false)
+    @Column(name = "ACC_ID", nullable = false, insertable = false, updatable = false)
     public Integer getAcc_id() {
         return acc_id;
     }
@@ -126,15 +125,15 @@ public class Account implements Serializable{
     }
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "account")
-    public Set<Payments> getPayments() {
+    public Set<Payment> getPayments() {
         return this.payments;
     }
 
-    public void setPayments(Set<Payments> payments) {
+    public void setPayments(Set<Payment> payments) {
         this.payments = payments;
     }
 
-    public void addPayments(Payments payment) {
+    public void addPayments(Payment payment) {
         payment.setAccount(this);
         this.payments.add(payment);
     }

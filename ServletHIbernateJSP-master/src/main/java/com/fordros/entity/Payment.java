@@ -12,14 +12,14 @@ import java.util.Date;
  */
 @Entity
 @Table(name = "payments")
-public class Payments implements Serializable {
+public class Payment implements Serializable {
     private Integer id;
     private String accountNumber;
     private Integer amount;
     private Date datePayment;
     private Account account;
 
-    public Payments(){
+    public Payment(){
 
     }
 
@@ -75,7 +75,7 @@ public class Payments implements Serializable {
 
     @Override
     public String toString(){
-        return "Payments{" +
+        return "Payment{" +
                 "acc='" + accountNumber + '\'' +
                 ", amount='" + amount + '\'' +
                 ", date='" + datePayment + '\'' +

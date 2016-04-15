@@ -2,7 +2,6 @@ package com.fordros.servlet;
 
 
 import com.fordros.entity.Account;
-import com.fordros.entity.Payments;
 import com.fordros.session.AccountManager;
 import com.fordros.session.AccountManagerImpl;
 
@@ -11,7 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
 /**
  * Created by Fordros on 20.03.2016.

@@ -2,7 +2,7 @@ package com.fordros.session;
 
 import com.fordros.DAO.PaymentsDAO;
 import com.fordros.DAO.PaymentsDAOImpl;
-import com.fordros.entity.Payments;
+import com.fordros.entity.Payment;
 import com.fordros.persistence.HibernateUtil;
 import org.hibernate.HibernateException;
 
@@ -15,11 +15,11 @@ import java.util.List;
 public class PaymentManagerImpl implements PaymentManager {
     PaymentsDAO paymentsDAO = new PaymentsDAOImpl();
 
-    public List<Payments> loadAllPayment() {
-        List<Payments> allPaymentses = new ArrayList<Payments>();
+    public List<Payment> loadAllPayment() {
+        List<Payment> allPaymentses = new ArrayList<Payment>();
         try {
             HibernateUtil.beginTransaction();
-            allPaymentses = paymentsDAO.findAll(Payments.class);
+            allPaymentses = paymentsDAO.findAll(Payment.class);
             HibernateUtil.commitTransaction();
         } catch (HibernateException ex) {
             System.out.println("Error in method loadAllPayment - " + ex);
@@ -28,23 +28,23 @@ public class PaymentManagerImpl implements PaymentManager {
     }
 
 
-    public List<Payments> findAllPaymentByAcc(Integer idAccount) {
-        List<Payments> allPaymentsByAcc = new ArrayList<Payments>();
+    public List<Payment> findAllPaymentByAcc(Integer idAccount) {
+        List<Payment> allPaymentByAcc = new ArrayList<Payment>();
         try {
             HibernateUtil.beginTransaction();
-            allPaymentsByAcc = paymentsDAO.findAllPaymentByAccId(idAccount);
+            allPaymentByAcc = paymentsDAO.findAllPaymentByAccId(idAccount);
             HibernateUtil.commitTransaction();
         } catch (HibernateException ex) {
             System.out.println("Error in method findAllPaymentByAcc -" + ex);
         }
-        return allPaymentsByAcc;
+        return allPaymentByAcc;
     }
 
 
-    public void saveNewPayment(Payments payments) {
+    public void saveNewPayment(Payment payment) {
        try {
            HibernateUtil.beginTransaction();
-           paymentsDAO.save(payments);
+           paymentsDAO.save(payment);
            HibernateUtil.commitTransaction();
        }catch (HibernateException ex){
            System.out.println("Error in method saveNewPayment");
@@ -54,10 +54,10 @@ public class PaymentManagerImpl implements PaymentManager {
     }
 
 
-    public void deletePayment(Payments payments) {
+    public void deletePayment(Payment payment) {
         try {
             HibernateUtil.beginTransaction();
-            paymentsDAO.delete(payments);
+            paymentsDAO.delete(payment);
             HibernateUtil.commitTransaction();
         }catch (HibernateException ex){
             System.out.println("Error in method deletePayment");
