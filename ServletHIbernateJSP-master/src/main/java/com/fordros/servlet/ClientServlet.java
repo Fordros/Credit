@@ -1,7 +1,9 @@
 package com.fordros.servlet;
 
 
+import com.fordros.CalculationDebts;
 import com.fordros.entity.Account;
+import com.fordros.entity.DebtTable;
 import com.fordros.session.AccountManager;
 import com.fordros.session.AccountManagerImpl;
 
@@ -10,6 +12,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Calendar;
+import java.util.List;
 
 /**
  * Created by Fordros on 20.03.2016.
@@ -17,6 +21,8 @@ import java.io.IOException;
 
 public class ClientServlet extends HttpServlet {
     AccountManager accountManager = new AccountManagerImpl();
+    DebtTable debtTable = new DebtTable();
+    CalculationDebts calculationDebts = new CalculationDebts();
 
 
     @Override
@@ -24,7 +30,10 @@ public class ClientServlet extends HttpServlet {
             throws ServletException, IOException {
 
         //List<Account> accounts = accountManager.loadAllAcc();
-        //req.setAttribute("account", accounts);
+        //req.setAttribute("account", account);
+//        List<Account> account = accountManager.loadAllAcc();
+//        System.out.println(account);
+//        req.setAttribute("account", account);
         req.getRequestDispatcher("client.jsp").forward(req, resp);
     }
 
@@ -49,8 +58,10 @@ public class ClientServlet extends HttpServlet {
 //       accountManager.saveNewClient(account);
 
         Account account = accountManager.findByAccNumber(req.getParameter("accNumber"));
-        System.out.println(account);
-        resp.sendRedirect("account");
+        List<DebtTable> calcDebts = calculationDebts.getCalcDebdts(account.getAccountNumber());
+        //resp.sendRedirect("account");
+        req.setAttribute("calcDebts", calcDebts);
+        req.getRequestDispatcher("client.jsp").forward(req, resp);
 
 
     }

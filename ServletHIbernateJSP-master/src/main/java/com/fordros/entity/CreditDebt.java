@@ -11,8 +11,7 @@ public class CreditDebt {
     private Integer debts; //задолженность на которую считается %
     private Integer percentPrincipalDebt; // % основной задолженности на дату
     private Integer percentPastDueDebts; // % просроченной задолженности на дату
-    private Integer summPercentPrincipalDebt;
-    private Integer summPercentPastDueDebts;
+
 
 
     public Integer calcDebts(Integer amount, Integer creditLimit, Integer payment) {
@@ -71,7 +70,7 @@ public class CreditDebt {
             if( (dateForCheck.get(Calendar.MONTH) == datePayment.get(Calendar.MONTH) &&
                     dateForCheck.get(Calendar.YEAR) == datePayment.get(Calendar.YEAR) &&
                     dateForCheck.get(Calendar.DAY_OF_YEAR) == datePayment.get(Calendar.DAY_OF_YEAR))){
-               result = payments.get(i).getAmount();
+               result += payments.get(i).getAmount();
             }
         }
         return result;
