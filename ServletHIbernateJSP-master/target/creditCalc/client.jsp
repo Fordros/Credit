@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/js.js"></script>
     <style>
         /* Remove the navbar's default margin-bottom and rounded borders */
         .navbar {
@@ -20,7 +23,14 @@
         }
 
         /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-        .row.content {height: 85%}
+        .content {
+            height: 100%;
+        }
+        .box{
+
+            height: 100%;
+            margin-top: 40px;
+        }
 
         /* Set gray background color and 100% height */
         .sidenav {
@@ -28,9 +38,42 @@
             background-color: #f1f1f1;
             height: 100%;
         }
-        .center {
-            vertical-align: middle
+        .info {
+            text-align: left;
+            padding: 5px;
+            font-size: 11px;
+            color: #fff;
+            position: absolute;
+            display: none;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-box-shadow: -1px 1px 2px #a9a9a9;
+            -moz-box-shadow: -1px 1px 2px #a9a9a9;
+            box-shadow: -1px 1px 2px #a9a9a9;
         }
+        .error {
+            background: #f60000;
+            border: 3px solid #d50000;
+        }
+        .correct {
+            background: #56d800;
+            border: 3px solid #008000;
+        }
+        .wrong {
+            font-weight: bold;
+            color: #e90000;
+        }
+        .normal {
+            font-weight: normal;
+            color: #222;
+        }
+        #send {
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            border-radius: 7px;
+        }
+
 
 
         /* Set black background color, white text and some padding */
@@ -50,7 +93,7 @@
         }
     </style>
 </head>
-<body>
+<body style="height: 100%">
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -75,28 +118,39 @@
 <%--<script type="text/javascript" src="webjars/jquery/2.1.1/jquery.min.js"></script>--%>
 
 <div class="container-fluid text-center">
-    <div class="row content">
+    <div class="row">
         <div class="col-sm-2 sidenav">
 
 
         </div>
-        <div class="col-sm-8">
-            <div class="row">
+        <div class="col-sm-8 content">
+
+            <div class="row box">
             <h4 class="text-center">Поиска клиента</h4>
-            <form  class="form-inline" method="post" action="/account" >
+            <form  id="jform" class="form-inline" method="post" action="/account" >
                 <div class="form-group">
                     <input class="form-control" type="text" name="accNumber" id="accNumber" placeholder="Номер карточного счета">
                 </div>
                 <div class="form-group">
-                    <input class="form-control" class="btn btn-default" type="submit" name="addClient" value="Найти" >
+                    <input class="form-control" class="btn btn-default" type="submit" name="addClient" id="send" value="Найти" >
                 </div>
             </form>
-            <div class="text-center">
-                <h3>Данные о кредитном договоре</h3>
-                <h4>Карточный счет: <small>${acc}</small></h4>
-                <h4>Кредитный лимит: <small>${creditLimit} копеек</small></h4>
-                <h4>Ставка по лимиту: <small>${percentDebitDue}%</small></h4>
-            </div>
+
+                <table class="table table-bordered table-hover">
+                    <caption class="text-center">Данные о кредитном договоре</caption>
+                    <tr class="success">
+                        <th style="vertical-align: middle"><h5 class="text-center">Карточный счет</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center">Кредитный лимит</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center">Ставка по лимиту</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center">Обшая задолженность на сегодня</h5></th>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align: middle"><h5 class="text-center">${acc}</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center">${creditLimit}</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center">${percentDebitDue}</h5></th>
+                        <th class="danger" style="vertical-align: middle"><h5 class="text-center"></h5></th>
+                    </tr>
+                </table>
             <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Посмотреть таблицу</button>
             </div>
         </div>
