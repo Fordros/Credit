@@ -61,6 +61,10 @@ public class ClientServlet extends HttpServlet {
         List<DebtTable> calcDebts = calculationDebts.getCalcDebdts(account.getAccountNumber());
         //resp.sendRedirect("account");
         req.setAttribute("calcDebts", calcDebts);
+        req.setAttribute("acc", account.getAccountNumber());
+        req.setAttribute("creditLimit", account.getCreditLimit());
+        req.setAttribute("percentDebitDue", account.getPercentDebtDue());
+
         req.getRequestDispatcher("client.jsp").forward(req, resp);
 
 

@@ -46,7 +46,7 @@ public class CalculationDebts {
         int creditLimit = account.getCreditLimit();
 
         //проверка на активность КЛ
-        if (account.getLimitDecreaseDate().before(amountDate.getTime())) {
+        if (account.getLimitTerminationDate().before(amountDate.getTime())) {
             creditLimit = 0;
         }
         //если дата расчета равна дате платежа, тогда учитываем платеж
@@ -63,7 +63,7 @@ public class CalculationDebts {
 
         for (int i = 0; amountDate.getTime().before(new Date()); i++) {
             //проверка на активность КЛ
-            if (account.getLimitDecreaseDate().before(amountDate.getTime())) {
+            if (account.getLimitTerminationDate().before(amountDate.getTime())) {
                 creditLimit = 0;
             }
             amountDate.add(Calendar.DATE, 1);
