@@ -11,10 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.js"></script>
     <script src="js/jquery-2.2.3.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/js.js"></script>
     <style>
         label.error {
@@ -23,8 +22,9 @@
             margin-left: 5px;
         }
 
-        input.error {
-            border: 1px dotted red;
+        .yel {
+            border: 1px dotted #ffffe0;
+            background-color: #ffffe0;
         }
         /* Remove the navbar's default margin-bottom and rounded borders */
         .navbar {
@@ -34,7 +34,7 @@
 
         /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
         .content {
-            height: 100%;
+            height: 95%;
         }
         .box{
 
@@ -46,7 +46,7 @@
         .sidenav {
             padding-top: 20px;
             background-color: #f1f1f1;
-            height: 100%;
+            height: 95%;
         }
 
         /* Set black background color, white text and some padding */
@@ -111,25 +111,25 @@
 
                 <table class="table table-bordered table-hover">
                     <caption class="text-center">Данные о кредитном договоре</caption>
-                    <tr class="success">
-                        <th style="vertical-align: middle"><h5 class="text-center">ФИО</h5></th>
-                        <th style="vertical-align: middle"><h5 class="text-center">ИНН</h5></th>
-                        <th style="vertical-align: middle"><h5 class="text-center">Карточный счет</h5></th>
-                        <th style="vertical-align: middle"><h5 class="text-center">Номер договора</h5></th>
-                        <th style="vertical-align: middle"><h5 class="text-center">Дата договора</h5></th>
-                        <th style="vertical-align: middle"><h5 class="text-center">Кредитный лимит</h5></th>
-                        <th style="vertical-align: middle"><h5 class="text-center">Ставка по лимиту</h5></th>
-                        <th style="vertical-align: middle"><h5 class="text-center">Обшая задолженность на сегодня</h5></th>
+                    <tr class="info" >
+                        <th style="vertical-align: middle"><h5 class="text-center" style="font-weight: 600">ФИО</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center" style="font-weight: 600">ИНН</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center" style="font-weight: 600">Карточный счет</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center" style="font-weight: 600">Номер договора</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center" style="font-weight: 600">Дата договора</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center" style="font-weight: 600">Кредитный лимит</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center" style="font-weight: 600">Ставка по лимиту</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center" style="font-weight: 600">Обшая задолженность на сегодня</h5></th>
                     </tr>
-                    <tr>
+                    <tr class="yel">
                         <th style="vertical-align: middle"><h5 class="text-center">${fio}</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center">${ssn}</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center">${acc}</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center">${numberDog}</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center">${dateDog}</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center">${creditLimit}</h5></th>
-                        <th style="vertical-align: middle"><h5 class="text-center">${percentDebitDue}</h5></th>
-                        <th class="danger" style="vertical-align: middle"><h5 class="text-center">${debts}</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center">${percentDebitDue}%</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center">${debts}</h5></th>
                     </tr>
                 </table>
             <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Посмотреть таблицу</button>
