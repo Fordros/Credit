@@ -16,7 +16,11 @@ public class Account implements Serializable{
 
     private Integer id;
     private Integer acc_id;
+    private String firstName;
+    private String lastName;
     private Integer ssn;
+    private Date dateDog;
+    private String numberDog;
     private String accountNumber;
     private Integer balance;
     private Integer creditLimit;
@@ -122,6 +126,39 @@ public class Account implements Serializable{
 
     public void setPercentPastDue(Integer percentPastDue) {
         this.percentPastDue = percentPastDue;
+    }
+
+    @Column(name = "FIRST_NAME")
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    @Column(name = "LAST_NAME")
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    @Column(name = "DATE_DOG")
+    public Date getDateDog() {
+        return dateDog;
+    }
+
+    public void setDateDog(Date dateDog) {
+        this.dateDog = dateDog;
+    }
+    @Column(name = "NUMBER_DOG")
+    public String getNumberDog() {
+        return numberDog;
+    }
+
+    public void setNumberDog(String numberDog) {
+        this.numberDog = numberDog;
     }
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "account")

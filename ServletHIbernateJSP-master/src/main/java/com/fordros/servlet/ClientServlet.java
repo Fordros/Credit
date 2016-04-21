@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Calendar;
 import java.util.List;
 
@@ -58,15 +59,24 @@ public class ClientServlet extends HttpServlet {
 //       accountManager.saveNewClient(account);
 
         Account account = accountManager.findByAccNumber(req.getParameter("accNumber"));
-        List<DebtTable> calcDebts = calculationDebts.getCalcDebdts(account.getAccountNumber());
-        //resp.sendRedirect("account");
-        req.setAttribute("calcDebts", calcDebts);
-        req.setAttribute("acc", account.getAccountNumber());
-        req.setAttribute("creditLimit", account.getCreditLimit());
-        req.setAttribute("percentDebitDue", account.getPercentDebtDue());
+        if(account == null){
+            req.getRequestDispatcher("error.jsp").forward(req, resp);
+        }else {
+            List<DebtTable> calcDebts = calculationDebts.getCalcDebdts(account.getAccountNumber());
+            //resp.sendRedirect("account");
+            req.setAttribute("calcDebts", calcDebts);
+            req.setAttribute("fio", account.getFirstName() + " " + account.getLastName());
+            req.setAttribute("ssn", account.getSsn());
+            req.setAttribute("acc", account.getAccountNumber());
+            req.setAttribute("numberDog", account.getNumberDog());
+            req.setAttribute("dateDog", account.getDateDog());
+            req.setAttribute("creditLimit", account.getCreditLimit());
+            req.setAttribute("percentDebitDue", account.getPercentDebtDue());
+            req.setAttribute("debts", calcDebts.get(calcDebts.size()-1).getDebts());
 
-        req.getRequestDispatcher("client.jsp").forward(req, resp);
 
+            req.getRequestDispatcher("client.jsp").forward(req, resp);
+        }
 
     }
 

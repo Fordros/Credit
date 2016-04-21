@@ -9,13 +9,21 @@
     <title>Test servlet</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-2.2.3.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/js.js"></script>
     <style>
+        label.error {
+            color: red;
+            font-style: italic;
+            margin-left: 5px;
+        }
+
+        input.error {
+            border: 1px dotted red;
+        }
         /* Remove the navbar's default margin-bottom and rounded borders */
         .navbar {
             margin-bottom: 0;
@@ -38,43 +46,6 @@
             background-color: #f1f1f1;
             height: 100%;
         }
-        .info {
-            text-align: left;
-            padding: 5px;
-            font-size: 11px;
-            color: #fff;
-            position: absolute;
-            display: none;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 5px;
-            -webkit-box-shadow: -1px 1px 2px #a9a9a9;
-            -moz-box-shadow: -1px 1px 2px #a9a9a9;
-            box-shadow: -1px 1px 2px #a9a9a9;
-        }
-        .error {
-            background: #f60000;
-            border: 3px solid #d50000;
-        }
-        .correct {
-            background: #56d800;
-            border: 3px solid #008000;
-        }
-        .wrong {
-            font-weight: bold;
-            color: #e90000;
-        }
-        .normal {
-            font-weight: normal;
-            color: #222;
-        }
-        #send {
-            -webkit-border-radius: 7px;
-            -moz-border-radius: 7px;
-            border-radius: 7px;
-        }
-
-
 
         /* Set black background color, white text and some padding */
         footer {
@@ -106,7 +77,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="/account">Home</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -129,26 +100,34 @@
             <h4 class="text-center">Поиска клиента</h4>
             <form  id="jform" class="form-inline" method="post" action="/account" >
                 <div class="form-group">
-                    <input class="form-control" type="text" name="accNumber" id="accNumber" placeholder="Номер карточного счета">
+                    <input type="text" class="form-control" maxlength="17" name="accNumber" id="accNumber" placeholder="Номер карточного счета">
                 </div>
                 <div class="form-group">
-                    <input class="form-control" class="btn btn-default" type="submit" name="addClient" id="send" value="Найти" >
+                    <input class="form-control" class="btn btn-default" type="submit"  name="addClient" id="send" value="Найти" >
                 </div>
             </form>
 
                 <table class="table table-bordered table-hover">
                     <caption class="text-center">Данные о кредитном договоре</caption>
                     <tr class="success">
+                        <th style="vertical-align: middle"><h5 class="text-center">ФИО</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center">ИНН</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center">Карточный счет</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center">Номер договора</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center">Дата договора</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center">Кредитный лимит</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center">Ставка по лимиту</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center">Обшая задолженность на сегодня</h5></th>
                     </tr>
                     <tr>
+                        <th style="vertical-align: middle"><h5 class="text-center">${fio}</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center">${ssn}</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center">${acc}</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center">${numberDog}</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center">${dateDog}</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center">${creditLimit}</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center">${percentDebitDue}</h5></th>
-                        <th class="danger" style="vertical-align: middle"><h5 class="text-center"></h5></th>
+                        <th class="danger" style="vertical-align: middle"><h5 class="text-center">${debts}</h5></th>
                     </tr>
                 </table>
             <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Посмотреть таблицу</button>

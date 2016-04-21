@@ -24,7 +24,7 @@ public class AccountManagerImpl implements AccountManager {
             account = accountDAO.findByAccNumber(accNumber);
             HibernateUtil.commitTransaction();
         } catch (NonUniqueResultException ex) {
-            System.out.println("Query returned more than one results.");
+            System.out.println("Query returned more than one results." + ex);
         } catch (HibernateException ex) {
             System.out.println("Error in method 'findByAccNumber'" + ex );
         }
