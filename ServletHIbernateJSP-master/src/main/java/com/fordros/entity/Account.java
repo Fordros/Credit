@@ -18,12 +18,14 @@ public class Account implements Serializable{
     private Integer acc_id;
     private String firstName;
     private String lastName;
+    private String middleName;
     private Integer ssn;
     private Date dateDog;
     private String numberDog;
     private String accountNumber;
     private Integer balance;
     private Integer creditLimit;
+    private Integer decreaseAmount; //сумма уменьшения кредитного лимита
     private Date limitTerminationDate; //дата окончания кредитного лимита
     private Date limitDecreaseDate; //дата уменьшения кредитного лимита
     private Integer percentDebtDue; //процентная ставка на срочную задолженность (тело КЛ)
@@ -144,6 +146,16 @@ public class Account implements Serializable{
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    @Column(name = "MIDDLE_NAME")
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
+    }
+
     @Column(name = "DATE_DOG")
     public Date getDateDog() {
         return dateDog;
@@ -152,6 +164,7 @@ public class Account implements Serializable{
     public void setDateDog(Date dateDog) {
         this.dateDog = dateDog;
     }
+
     @Column(name = "NUMBER_DOG")
     public String getNumberDog() {
         return numberDog;
@@ -159,6 +172,15 @@ public class Account implements Serializable{
 
     public void setNumberDog(String numberDog) {
         this.numberDog = numberDog;
+    }
+
+    @Column(name = "DECREASE_AMOUNT")
+    public Integer getDecreaseAmount() {
+        return decreaseAmount;
+    }
+
+    public void setDecreaseAmount(Integer limitDecrease) {
+        this.decreaseAmount = limitDecrease;
     }
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "account")

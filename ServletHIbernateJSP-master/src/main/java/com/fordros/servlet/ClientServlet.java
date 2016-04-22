@@ -12,8 +12,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -62,7 +60,7 @@ public class ClientServlet extends HttpServlet {
         if(account == null){
             req.getRequestDispatcher("error.jsp").forward(req, resp);
         }else {
-            List<DebtTable> calcDebts = calculationDebts.getCalcDebdts(account.getAccountNumber());
+            List<DebtTable> calcDebts = calculationDebts.getCalcDebts(account.getAccountNumber());
             //resp.sendRedirect("account");
             req.setAttribute("calcDebts", calcDebts);
             req.setAttribute("fio", account.getFirstName() + " " + account.getLastName());

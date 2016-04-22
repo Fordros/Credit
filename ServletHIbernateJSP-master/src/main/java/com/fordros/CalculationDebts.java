@@ -8,8 +8,8 @@ import com.fordros.session.AccountManager;
 import com.fordros.session.AccountManagerImpl;
 import com.fordros.session.PaymentManager;
 import com.fordros.session.PaymentManagerImpl;
+import com.sun.xml.internal.bind.v2.TODO;
 
-import java.lang.reflect.Array;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -26,7 +26,7 @@ public class CalculationDebts {
     PaymentManager paymentManager = new PaymentManagerImpl();
     CreditDebt creditDebt = new CreditDebt();
 
-    public List<DebtTable> getCalcDebdts(String acc) {
+    public List<DebtTable> getCalcDebts(String acc) {
         List<DebtTable> result = new ArrayList<>();
 
         int debts;
@@ -41,8 +41,10 @@ public class CalculationDebts {
         List<Payment> payments = paymentManager.findAllPaymentByAcc(account.getId());
         Calendar amountDate = Calendar.getInstance();
 
-        // дата с которой начинается расчет
+        // TODO дата с которой начинается расчет
         amountDate.set(2016, Calendar.FEBRUARY, 20);
+
+        //Сумма КЛ
         int creditLimit = account.getCreditLimit();
 
         //проверка на активность КЛ
@@ -62,11 +64,20 @@ public class CalculationDebts {
 //ОБЩИЙ ЦИКЛ
 
         for (int i = 0; amountDate.getTime().before(new Date()); i++) {
+            //накручиваем плюс день
+            amountDate.add(Calendar.DATE, 1);
+
             //проверка на активность КЛ
             if (account.getLimitTerminationDate().before(amountDate.getTime())) {
                 creditLimit = 0;
             }
-            amountDate.add(Calendar.DATE, 1);
+
+            // TODO проверка на дату снижения КЛ
+            if(creditDebt.isDecreaseDate(amountDate.getTime(),account.getLimitDecreaseDate())){
+                if(creditLimit > account.getDecreaseAmount()){
+                    creditLimit -= account.getDecreaseAmount();
+                }
+            }
             //Биллинг
             boolean isBilling = creditDebt.isBillingDate(amountDate.getTime());
 

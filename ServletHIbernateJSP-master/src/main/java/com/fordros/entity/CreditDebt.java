@@ -60,6 +60,19 @@ public class CreditDebt {
         }
         return result;
     }
+
+    public boolean isDecreaseDate(Date date, Date limitDecreaseDate) {
+        boolean result = false;
+        if(limitDecreaseDate != null){
+            Calendar dateForCheck = Calendar.getInstance();
+            Calendar dateDecrease = Calendar.getInstance();
+            dateForCheck.setTime(date);
+            dateDecrease.setTime(limitDecreaseDate);
+            result = (dateForCheck.get(Calendar.DAY_OF_YEAR) == dateDecrease.get(Calendar.DAY_OF_YEAR));
+        }
+        return result;
+    }
+
     public Integer getAmount(Date date, List<Payment> payments) {
         Calendar dateForCheck = Calendar.getInstance();
         dateForCheck.setTime(date);
