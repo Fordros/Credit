@@ -3,6 +3,7 @@ package com.fordros.servlet;
 
 import com.fordros.CalculationDebts;
 import com.fordros.entity.Account;
+import com.fordros.entity.CreditDebt;
 import com.fordros.entity.DebtTable;
 import com.fordros.session.AccountManager;
 import com.fordros.session.AccountManagerImpl;
@@ -12,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 /**
@@ -22,17 +24,13 @@ public class ClientServlet extends HttpServlet {
     AccountManager accountManager = new AccountManagerImpl();
     DebtTable debtTable = new DebtTable();
     CalculationDebts calculationDebts = new CalculationDebts();
+    SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy");
+    CreditDebt creditDebt = new CreditDebt();
 
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-
-        //List<Account> accounts = accountManager.loadAllAcc();
-        //req.setAttribute("account", account);
-//        List<Account> account = accountManager.loadAllAcc();
-//        System.out.println(account);
-//        req.setAttribute("account", account);
         req.getRequestDispatcher("client.jsp").forward(req, resp);
     }
 
@@ -40,21 +38,6 @@ public class ClientServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         req.setCharacterEncoding ("UTF-8");
-//        String firstName = req.getParameter("firstName");
-//        String lastName = req.getParameter("lastName");
-//        String phone = req.getParameter("phone");
-//
-//        Account account = new Account();
-//        account.setAccountNumber(req.getParameter("accNumber"));
-//
-////        payments.setCity(req.getParameter("city"));
-//        payments.setStreet(req.getParameter("street"));
-//        payments.setBuilding(req.getParameter("building"));
-//        payments.setApartment(req.getParameter("apartment"));
-//
-//        Account account = new Account(firstName,lastName,phone, payments);
-//        payments.setAccount(account);
-//       accountManager.saveNewClient(account);
 
         Account account = accountManager.findByAccNumber(req.getParameter("accNumber"));
         if(account == null){
@@ -63,15 +46,14 @@ public class ClientServlet extends HttpServlet {
             List<DebtTable> calcDebts = calculationDebts.getCalcDebts(account.getAccountNumber());
             //resp.sendRedirect("account");
             req.setAttribute("calcDebts", calcDebts);
-            req.setAttribute("fio", account.getFirstName() + " " + account.getLastName());
+            req.setAttribute("fio", account.getFirstName() + " " + account.getLastName() + " " + account.getMiddleName());
             req.setAttribute("ssn", account.getSsn());
             req.setAttribute("acc", account.getAccountNumber());
             req.setAttribute("numberDog", account.getNumberDog());
-            req.setAttribute("dateDog", account.getDateDog());
-            req.setAttribute("creditLimit", account.getCreditLimit());
+            req.setAttribute("dateDog", simpleDateFormat.format(account.getDateDog()));
+            req.setAttribute("creditLimit", creditDebt.getFormatedAmount(account.getCreditLimit()));
             req.setAttribute("percentDebitDue", account.getPercentDebtDue());
             req.setAttribute("debts", calcDebts.get(calcDebts.size()-2).getFullDebts());
-
 
             req.getRequestDispatcher("client.jsp").forward(req, resp);
         }

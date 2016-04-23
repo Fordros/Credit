@@ -36,6 +36,7 @@ public class CalculationDebts {
         int sumPercentPrincipalDebt = 0;
         int sumPercentPastDueDebts = 0;
         int fullDebts;
+        int creditLimit;
 
         Account account = accountManager.findByAccNumber(acc);
         List<Payment> payments = paymentManager.findAllPaymentByAcc(account.getId());
@@ -45,7 +46,7 @@ public class CalculationDebts {
         amountDate.set(2016, Calendar.FEBRUARY, 20);
 
         //Сумма КЛ
-        int creditLimit = account.getCreditLimit();
+        creditLimit = account.getCreditLimit();
 
         //проверка на активность КЛ
         if (account.getLimitTerminationDate().before(amountDate.getTime())) {
@@ -76,6 +77,7 @@ public class CalculationDebts {
             if(creditDebt.isDecreaseDate(amountDate.getTime(),account.getLimitDecreaseDate())){
                 if(creditLimit > account.getDecreaseAmount()){
                     creditLimit -= account.getDecreaseAmount();
+                    debts -= account.getDecreaseAmount();
                 }
             }
             //Биллинг
@@ -122,8 +124,10 @@ public class CalculationDebts {
 
             //Общая задолженность
             fullDebts = creditLimit - debts + sumPercentPrincipalDebt * (-1) + sumPercentPastDueDebts * (-1);
+
+            //формирование табл. для вывода
             DebtTable debtTable = new DebtTable();
-            debtTable.setId(i);
+            debtTable.setId(i+1);
             debtTable.setDate(simpleDateFormat.format(amountDate.getTime()));
             debtTable.setDebts(creditDebt.getFormatedAmount(debts));
             debtTable.setPay(creditDebt.getFormatedAmount(pay));

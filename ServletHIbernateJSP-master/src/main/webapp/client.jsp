@@ -87,16 +87,14 @@
         </div>
     </div>
 </nav>
-<%--<script type="text/javascript" src="js/bootstrap.min.js"></script>--%>
-<%--<script type="text/javascript" src="webjars/jquery/2.1.1/jquery.min.js"></script>--%>
 
 <div class="container-fluid text-center">
     <div class="row">
-        <div class="col-sm-2 sidenav">
+        <div class="col-sm-1 sidenav">
 
 
         </div>
-        <div class="col-sm-8 content">
+        <div class="col-sm-10 content">
 
             <div class="row box">
             <h4 class="text-center">Поиска клиента</h4>
@@ -119,7 +117,7 @@
                         <th style="vertical-align: middle"><h5 class="text-center" style="font-weight: 600">Дата договора</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center" style="font-weight: 600">Кредитный лимит</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center" style="font-weight: 600">Ставка по лимиту</h5></th>
-                        <th style="vertical-align: middle"><h5 class="text-center" style="font-weight: 600">Обшая задолженность на сегодня</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center" style="font-weight: 600">Обшая задолженность</h5></th>
                     </tr>
                     <tr class="yel">
                         <th style="vertical-align: middle"><h5 class="text-center">${fio}</h5></th>
@@ -128,14 +126,14 @@
                         <th style="vertical-align: middle"><h5 class="text-center">${numberDog}</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center">${dateDog}</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center">${creditLimit}</h5></th>
-                        <th style="vertical-align: middle"><h5 class="text-center">${percentDebitDue}%</h5></th>
+                        <th style="vertical-align: middle"><h5 class="text-center">${percentDebitDue}</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center">${debts}</h5></th>
                     </tr>
                 </table>
             <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Посмотреть таблицу</button>
             </div>
         </div>
-        <div class="col-sm-2 sidenav">
+        <div class="col-sm-1 sidenav">
 
         </div>
     </div>
@@ -153,8 +151,8 @@
                         <tr>
                             <th style="vertical-align: middle"><h5 class="text-center">№</h5></th>
                             <th style="vertical-align: middle"><h5 class="text-center">Дата</h5></th>
-                            <th style="vertical-align: middle"><h5 class="text-center">Задолженность</h5></th>
-                            <th style="vertical-align: middle"><h5 class="text-center">Платеж</h5></th>
+                            <th style="vertical-align: middle"><h5 class="text-center">Доступно для снятия</h5></th>
+                            <th style="vertical-align: middle"><h5 class="text-center">Зачисления</h5></th>
                             <th style="vertical-align: middle"><h5 class="text-center">Процент по телу КЛ</h5></th>
                             <th style="vertical-align: middle"><h5 class="text-center">Процент по НО</h5></th>
                             <th style="vertical-align: middle"><h5 class="text-center">Сумма процентов по телу</h5></th>

@@ -56,7 +56,7 @@ public class CreditDebt {
             datePayment.setTime(payments.get(i).getDatePayment());
             result = (dateForCheck.get(Calendar.MONTH) == datePayment.get(Calendar.MONTH) &&
                     dateForCheck.get(Calendar.YEAR) == datePayment.get(Calendar.YEAR) &&
-                    dateForCheck.get(Calendar.DAY_OF_YEAR) == datePayment.get(Calendar.DAY_OF_YEAR));
+                    dateForCheck.get(Calendar.DAY_OF_MONTH) == datePayment.get(Calendar.DAY_OF_MONTH));
         }
         return result;
     }
@@ -68,7 +68,7 @@ public class CreditDebt {
             Calendar dateDecrease = Calendar.getInstance();
             dateForCheck.setTime(date);
             dateDecrease.setTime(limitDecreaseDate);
-            result = (dateForCheck.get(Calendar.DAY_OF_YEAR) == dateDecrease.get(Calendar.DAY_OF_YEAR));
+            result = (dateForCheck.get(Calendar.DAY_OF_MONTH) == dateDecrease.get(Calendar.DAY_OF_MONTH));
         }
         return result;
     }
@@ -82,7 +82,7 @@ public class CreditDebt {
             datePayment.setTime(payments.get(i).getDatePayment());
             if( (dateForCheck.get(Calendar.MONTH) == datePayment.get(Calendar.MONTH) &&
                     dateForCheck.get(Calendar.YEAR) == datePayment.get(Calendar.YEAR) &&
-                    dateForCheck.get(Calendar.DAY_OF_YEAR) == datePayment.get(Calendar.DAY_OF_YEAR))){
+                    dateForCheck.get(Calendar.DAY_OF_MONTH) == datePayment.get(Calendar.DAY_OF_MONTH))){
                result += payments.get(i).getAmount();
             }
         }
