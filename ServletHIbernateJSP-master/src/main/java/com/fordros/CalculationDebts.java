@@ -8,7 +8,7 @@ import com.fordros.session.AccountManager;
 import com.fordros.session.AccountManagerImpl;
 import com.fordros.session.PaymentManager;
 import com.fordros.session.PaymentManagerImpl;
-import com.sun.xml.internal.bind.v2.TODO;
+
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -37,16 +37,24 @@ public class CalculationDebts {
         int sumPercentPastDueDebts = 0;
         int fullDebts;
         int creditLimit;
+        int decreaseAmount;
 
         Account account = accountManager.findByAccNumber(acc);
         List<Payment> payments = paymentManager.findAllPaymentByAcc(account.getId());
         Calendar amountDate = Calendar.getInstance();
 
-        // TODO дата с которой начинается расчет
-        amountDate.set(2016, Calendar.FEBRUARY, 20);
+        // дата с которой начинается расчет
+        amountDate.set(2016, Calendar.MARCH, 24);
 
         //Сумма КЛ
         creditLimit = account.getCreditLimit();
+        //умма уменьшения КЛ
+        if (account.getDecreaseAmount() == null){
+            decreaseAmount = 0;
+        }else{
+            decreaseAmount = account.getDecreaseAmount();
+        }
+
 
         //проверка на активность КЛ
         if (account.getLimitTerminationDate().before(amountDate.getTime())) {
@@ -73,11 +81,11 @@ public class CalculationDebts {
                 creditLimit = 0;
             }
 
-            // TODO проверка на дату снижения КЛ
+            // проверка на дату снижения КЛ
             if(creditDebt.isDecreaseDate(amountDate.getTime(),account.getLimitDecreaseDate())){
-                if(creditLimit > account.getDecreaseAmount()){
-                    creditLimit -= account.getDecreaseAmount();
-                    debts -= account.getDecreaseAmount();
+                if(creditLimit > decreaseAmount){
+                    creditLimit -= decreaseAmount;
+                    debts -= decreaseAmount;
                 }
             }
             //Биллинг
@@ -119,7 +127,9 @@ public class CalculationDebts {
                 pay = 0;
             }
             if (isBilling) {
-                debts += pay + percents[0][i - 1] + percents[1][i - 1];
+                if(i!=0) {
+                    debts += pay + percents[0][i - 1] + percents[1][i - 1];
+                }
             }
 
             //Общая задолженность

@@ -40,7 +40,7 @@ public class CreditDebt {
     public boolean isBillingDate(Date date) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
-        int dateBilling = 26;
+        int dateBilling = 25;
         int dateOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
         boolean result = dateBilling == dateOfMonth;
 

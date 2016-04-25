@@ -87,8 +87,6 @@
         </div>
     </div>
 </nav>
-<%--<script type="text/javascript" src="js/bootstrap.min.js"></script>--%>
-<%--<script type="text/javascript" src="webjars/jquery/2.1.1/jquery.min.js"></script>--%>
 
 <div class="container-fluid text-center">
     <div class="row">
@@ -109,8 +107,9 @@
                 </div>
             </form>
 
-                <table class="table table-bordered table-hover">
+                <table class="table table-bordered table-hover table-condensed">
                     <caption class="text-center">Данные о кредитном договоре</caption>
+                    <thead>
                     <tr class="info" >
                         <th style="vertical-align: middle"><h5 class="text-center" style="font-weight: 600">ФИО</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center" style="font-weight: 600">ИНН</h5></th>
@@ -121,6 +120,8 @@
                         <th style="vertical-align: middle"><h5 class="text-center" style="font-weight: 600">Ставка по лимиту</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center" style="font-weight: 600">Обшая задолженность</h5></th>
                     </tr>
+                    </thead>
+                    <tbody>
                     <tr class="yel">
                         <th style="vertical-align: middle"><h5 class="text-center">${fio}</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center">${ssn}</h5></th>
@@ -131,6 +132,7 @@
                         <th style="vertical-align: middle"><h5 class="text-center">${percentDebitDue}</h5></th>
                         <th style="vertical-align: middle"><h5 class="text-center">${debts}</h5></th>
                     </tr>
+                    </tbody>
                 </table>
             <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Посмотреть таблицу</button>
             </div>
@@ -148,9 +150,10 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-body">
-                    <table class="table table-bordered table-hover">
+                    <table class="table table-bordered table-hover table-condensed">
                         <caption class="text-center">Таблица задолженности по дням</caption>
-                        <tr>
+                        <thead>
+                        <tr class="info">
                             <th style="vertical-align: middle"><h5 class="text-center">№</h5></th>
                             <th style="vertical-align: middle"><h5 class="text-center">Дата</h5></th>
                             <th style="vertical-align: middle"><h5 class="text-center">Доступно для снятия</h5></th>
@@ -161,7 +164,9 @@
                             <th style="vertical-align: middle"><h5 class="text-center">Сумма процентов по НО</h5></th>
                             <th style="vertical-align: middle"><h5 class="text-center">Обшая задолженность на дату</h5></th>
                         </tr>
+                        </thead>
                         <c:forEach var="cd" items="${calcDebts}">
+                        <tbody>
                             <tr>
                                 <th style="vertical-align: middle"><h6 class="text-center">${cd.id}</h6></th>
                                 <th style="vertical-align: middle"><h6 class="text-center">${cd.date}</h6></th>
@@ -174,6 +179,7 @@
                                 <th style="vertical-align: middle"><h6 class="text-center">${cd.fullDebts}</h6></th>
                             </tr>
                         </c:forEach>
+                        </tbody>
                     </table>
                 </div>
                 <div class="modal-footer">
