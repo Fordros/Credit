@@ -14,8 +14,8 @@ public class CreditDebt {
 
 
 
-    public Integer calcDebts(Integer amount, Integer creditLimit, Integer payment) {
-        debts = amount + creditLimit + payment;
+    public Integer calcDebts(Integer debtsAmount,  Integer payment) {
+        debts = debtsAmount  + payment;
         return debts;
     }
 
@@ -37,9 +37,9 @@ public class CreditDebt {
         return percentPastDueDebts;
     }
 
-    public boolean isBillingDate(Date date) {
+    public boolean isBillingDate(Date postDate) {
         Calendar calendar = Calendar.getInstance();
-        calendar.setTime(date);
+        calendar.setTime(postDate);
         int dateBilling = 25;
         int dateOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
         boolean result = dateBilling == dateOfMonth;
@@ -47,9 +47,21 @@ public class CreditDebt {
         return result;
     }
 
-    public boolean isNowPaymentDate(Date date, List<Payment> payments) {
+    public boolean isTerminateDate(Date postDate, Date limitTerminationDate) {
         Calendar dateForCheck = Calendar.getInstance();
-        dateForCheck.setTime(date);
+        Calendar terminationDate = Calendar.getInstance();
+        dateForCheck.setTime(postDate);
+        terminationDate.setTime(limitTerminationDate);
+        boolean result = false;
+        result = (dateForCheck.get(Calendar.MONTH) == terminationDate.get(Calendar.MONTH) &&
+                dateForCheck.get(Calendar.YEAR) == terminationDate.get(Calendar.YEAR) &&
+                dateForCheck.get(Calendar.DAY_OF_MONTH) == terminationDate.get(Calendar.DAY_OF_MONTH));
+        return result;
+    }
+
+    public boolean isNowPaymentDate(Date postDate, List<Payment> payments) {
+        Calendar dateForCheck = Calendar.getInstance();
+        dateForCheck.setTime(postDate);
         Calendar datePayment = Calendar.getInstance();
         boolean result = false;
         for (int i = 0; i < payments.size(); i++) {
@@ -61,21 +73,21 @@ public class CreditDebt {
         return result;
     }
 
-    public boolean isDecreaseDate(Date date, Date limitDecreaseDate) {
+    public boolean isDecreaseDate(Date postDate, Date limitDecreaseDate) {
         boolean result = false;
         if(limitDecreaseDate != null){
             Calendar dateForCheck = Calendar.getInstance();
             Calendar dateDecrease = Calendar.getInstance();
-            dateForCheck.setTime(date);
+            dateForCheck.setTime(postDate);
             dateDecrease.setTime(limitDecreaseDate);
             result = (dateForCheck.get(Calendar.DAY_OF_MONTH) == dateDecrease.get(Calendar.DAY_OF_MONTH));
         }
         return result;
     }
 
-    public Integer getAmount(Date date, List<Payment> payments) {
+    public Integer getAmount(Date postDate, List<Payment> payments) {
         Calendar dateForCheck = Calendar.getInstance();
-        dateForCheck.setTime(date);
+        dateForCheck.setTime(postDate);
         Calendar datePayment = Calendar.getInstance();
         Integer result = 0;
         for (int i = 0; i < payments.size(); i++) {
@@ -89,7 +101,7 @@ public class CreditDebt {
         return result;
     }
 
-    public String getFormatedAmount(Integer amount){
+    public String getFormattedAmount(Integer amount){
         String result = amount.toString();
         String grn;
         String kop;

@@ -155,9 +155,10 @@
                         <thead>
                         <tr class="info">
                             <th style="vertical-align: middle"><h5 class="text-center">№</h5></th>
-                            <th style="vertical-align: middle"><h5 class="text-center">Дата</h5></th>
-                            <th style="vertical-align: middle"><h5 class="text-center">Доступно для снятия</h5></th>
-                            <th style="vertical-align: middle"><h5 class="text-center">Зачисления</h5></th>
+                            <th style="vertical-align: middle"><h5 class="text-center">Дата расчёта</h5></th>
+                            <th style="vertical-align: middle"><h5 class="text-center">Кредитный лимит</h5></th>
+                            <th style="vertical-align: middle"><h5 class="text-center">Использованно КЛ</h5></th>
+                            <th style="vertical-align: middle"><h5 class="text-center">Платеж клиента</h5></th>
                             <th style="vertical-align: middle"><h5 class="text-center">Процент по телу КЛ</h5></th>
                             <th style="vertical-align: middle"><h5 class="text-center">Процент по НО</h5></th>
                             <th style="vertical-align: middle"><h5 class="text-center">Сумма процентов по телу</h5></th>
@@ -170,6 +171,7 @@
                             <tr>
                                 <th style="vertical-align: middle"><h6 class="text-center">${cd.id}</h6></th>
                                 <th style="vertical-align: middle"><h6 class="text-center">${cd.date}</h6></th>
+                                <th style="vertical-align: middle"><h6 class="text-center">${cd.creditLimit}</h6></th>
                                 <th style="vertical-align: middle"><h6 class="text-center">${cd.debts}</h6></th>
                                 <th style="vertical-align: middle"><h6 class="text-center">${cd.pay}</h6></th>
                                 <th style="vertical-align: middle"><h6 class="text-center">${cd.percentPrincipalDebt}</h6></th>

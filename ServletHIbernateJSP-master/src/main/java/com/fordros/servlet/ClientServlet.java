@@ -51,7 +51,7 @@ public class ClientServlet extends HttpServlet {
             req.setAttribute("acc", account.getAccountNumber());
             req.setAttribute("numberDog", account.getNumberDog());
             req.setAttribute("dateDog", simpleDateFormat.format(account.getDateDog()));
-            req.setAttribute("creditLimit", creditDebt.getFormatedAmount(account.getCreditLimit()));
+            req.setAttribute("creditLimit", creditDebt.getFormattedAmount(account.getCreditLimit()));
             req.setAttribute("percentDebitDue", account.getPercentDebtDue());
             req.setAttribute("debts", calcDebts.get(calcDebts.size()-2).getFullDebts());
 

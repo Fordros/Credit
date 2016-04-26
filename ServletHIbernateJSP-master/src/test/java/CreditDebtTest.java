@@ -20,7 +20,7 @@ public class CreditDebtTest {
 
     @Test
     public void calcDebtsTest() {
-        int result = creditDebt.calcDebts(-126671,156000,0);
+        int result = creditDebt.calcDebts(-126671,0);
         System.out.println(result + "коп.");
 
 

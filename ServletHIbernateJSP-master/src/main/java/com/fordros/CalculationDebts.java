@@ -29,8 +29,9 @@ public class CalculationDebts {
     public List<DebtTable> getCalcDebts(String acc) {
         List<DebtTable> result = new ArrayList<>();
 
-        int debts;
-        int pay = 0;
+        int debts; //выбранно КЛ
+        int accessibleAmount; // доступно КЛ
+        int pay; //платеж клиента
         int percentPrincipalDebt; // % основной задолженности на дату
         int percentPastDueDebts; // % просроченной задолженности на дату
         int sumPercentPrincipalDebt = 0;
@@ -43,64 +44,106 @@ public class CalculationDebts {
         List<Payment> payments = paymentManager.findAllPaymentByAcc(account.getId());
         Calendar amountDate = Calendar.getInstance();
 
+//-----------УСТАНОВКА СТАРТОВЫХ ЗНАЧЕНИЙ---------------
+
         // дата с которой начинается расчет
-        amountDate.set(2016, Calendar.MARCH, 24);
+        amountDate.set(2015, Calendar.DECEMBER, 25);
 
         //Сумма КЛ
         creditLimit = account.getCreditLimit();
-        //умма уменьшения КЛ
+
+        //проверка на активность КЛ
+        if(creditDebt.isTerminateDate(amountDate.getTime(),account.getLimitTerminationDate())){
+           creditLimit = 0;
+        }else {
+            if(creditLimit == 0){
+                creditLimit = 0;
+            }else {
+                if(creditDebt.isDecreaseDate(amountDate.getTime(),account.getLimitDecreaseDate())){
+                    creditLimit -= account.getDecreaseAmount();
+                }
+            }
+        }
+
+        //сумма уменьшения КЛ
         if (account.getDecreaseAmount() == null){
             decreaseAmount = 0;
         }else{
             decreaseAmount = account.getDecreaseAmount();
         }
 
-
-        //проверка на активность КЛ
-        if (account.getLimitTerminationDate().before(amountDate.getTime())) {
-            creditLimit = 0;
-        }
-        //если дата расчета равна дате платежа, тогда учитываем платеж
+        //если дата расчета равна дате платежа, тогда выбираем платеж
         if (creditDebt.isNowPaymentDate(amountDate.getTime(), payments)) {
             pay = creditDebt.getAmount(amountDate.getTime(), payments);
-            debts = creditDebt.calcDebts(account.getBalance(), creditLimit, pay);
         } else {
-            debts = creditDebt.calcDebts(account.getBalance(), creditLimit, 0);
+            pay = 0;
         }
+
+        //подсчет выбранного КЛ
+        debts = account.getBalance() + pay;
+
+        //подсчет доступного КЛ
+        accessibleAmount = creditLimit + debts;
+
+        //% основной задолженности
+        if(accessibleAmount>0){
+            percentPrincipalDebt = debts * account.getPercentDebtDue() / 100 / 360;
+        }else{
+            percentPrincipalDebt = 0;
+        }
+
+        //% несанкционированного овера
+        if(accessibleAmount<0){
+            percentPastDueDebts = debts * account.getPercentPastDue() / 100 / 360;
+        }else{
+            percentPastDueDebts = 0;
+        }
+
+        //Общая задолженность
+        fullDebts = debts + pay + sumPercentPrincipalDebt + sumPercentPastDueDebts;
+
+
 
         int[][] percents = new int[200][200];
 
-//ОБЩИЙ ЦИКЛ
+//---------------------------------------------------ОБЩИЙ ЦИКЛ
 
         for (int i = 0; amountDate.getTime().before(new Date()); i++) {
-            //накручиваем плюс день
-            amountDate.add(Calendar.DATE, 1);
 
             //проверка на активность КЛ
-            if (account.getLimitTerminationDate().before(amountDate.getTime())) {
+            if(creditDebt.isTerminateDate(amountDate.getTime(),account.getLimitTerminationDate())){
                 creditLimit = 0;
-            }
-
-            // проверка на дату снижения КЛ
-            if(creditDebt.isDecreaseDate(amountDate.getTime(),account.getLimitDecreaseDate())){
-                if(creditLimit > decreaseAmount){
-                    creditLimit -= decreaseAmount;
-                    debts -= decreaseAmount;
+            }else {
+                if(creditLimit == 0){
+                    creditLimit = 0;
+                }else {
+                    if(creditDebt.isDecreaseDate(amountDate.getTime(),account.getLimitDecreaseDate())){
+                        creditLimit -= decreaseAmount;
+                    }
                 }
             }
-            //Биллинг
+
+            //если дата расчета равна дате платежа, тогда выбираем платеж
+            if (creditDebt.isNowPaymentDate(amountDate.getTime(), payments)) {
+                pay = creditDebt.getAmount(amountDate.getTime(), payments);
+            } else {
+                pay = 0;
+            }
+
+            //проверка даты расчета на биллинговую дату
             boolean isBilling = creditDebt.isBillingDate(amountDate.getTime());
 
             //% основной задолженности
-            if (debts > 0) {
-                percentPrincipalDebt = (debts - creditLimit) * account.getPercentDebtDue() / 360 / 100;
-            } else {
-                percentPrincipalDebt = creditLimit * account.getPercentDebtDue() / 100 / 360 * (-1);
+            if(accessibleAmount>0){
+                percentPrincipalDebt = debts * account.getPercentDebtDue() / 100 / 360;
+            }else{
+                percentPrincipalDebt = 0;
             }
-            //% несанкц. овера
-            if (debts < 0) {
-                percentPastDueDebts = debts * account.getPercentPastDue() / 360 / 100;
-            } else {
+
+            //% несанкционированного овера
+            if(accessibleAmount<0){
+                percentPastDueDebts = debts * account.getPercentPastDue() / 100 / 360;
+            }else{
                 percentPastDueDebts = 0;
             }
 
@@ -119,35 +162,33 @@ public class CalculationDebts {
             percents[0][i] = sumPercentPrincipalDebt;
             percents[1][i] = sumPercentPastDueDebts;
 
-            //задолженность
-            if (creditDebt.isNowPaymentDate(amountDate.getTime(), payments)) {
-                pay = creditDebt.getAmount(amountDate.getTime(), payments);
+            //выбраный платеж с учетом биллинга
+            if(isBilling){
+                debts += pay + sumPercentPastDueDebts + sumPercentPrincipalDebt;
+            }else {
                 debts += pay;
-            } else {
-                pay = 0;
-            }
-            if (isBilling) {
-                if(i!=0) {
-                    debts += pay + percents[0][i - 1] + percents[1][i - 1];
-                }
             }
 
             //Общая задолженность
-            fullDebts = creditLimit - debts + sumPercentPrincipalDebt * (-1) + sumPercentPastDueDebts * (-1);
+            fullDebts = debts + pay + sumPercentPrincipalDebt  + sumPercentPastDueDebts;
 
             //формирование табл. для вывода
             DebtTable debtTable = new DebtTable();
             debtTable.setId(i+1);
             debtTable.setDate(simpleDateFormat.format(amountDate.getTime()));
-            debtTable.setDebts(creditDebt.getFormatedAmount(debts));
-            debtTable.setPay(creditDebt.getFormatedAmount(pay));
-            debtTable.setPercentPrincipalDebt(creditDebt.getFormatedAmount(percentPrincipalDebt));
-            debtTable.setPercentPastDueDebts(creditDebt.getFormatedAmount(percentPastDueDebts));
-            debtTable.setSumPercentPrincipalDebt(creditDebt.getFormatedAmount(sumPercentPrincipalDebt));
-            debtTable.setSumPercentPastDueDebts(creditDebt.getFormatedAmount(sumPercentPastDueDebts));
-            debtTable.setFullDebts(creditDebt.getFormatedAmount(fullDebts));
+            debtTable.setCreditLimit(creditDebt.getFormattedAmount(creditLimit));
+            debtTable.setDebts(creditDebt.getFormattedAmount(debts));
+            debtTable.setPay(creditDebt.getFormattedAmount(pay));
+            debtTable.setPercentPrincipalDebt(creditDebt.getFormattedAmount(percentPrincipalDebt));
+            debtTable.setPercentPastDueDebts(creditDebt.getFormattedAmount(percentPastDueDebts));
+            debtTable.setSumPercentPrincipalDebt(creditDebt.getFormattedAmount(sumPercentPrincipalDebt));
+            debtTable.setSumPercentPastDueDebts(creditDebt.getFormattedAmount(sumPercentPastDueDebts));
+            debtTable.setFullDebts(creditDebt.getFormattedAmount(fullDebts));
 
             result.add(debtTable);
+
+            //накручиваем плюс день
+            amountDate.add(Calendar.DATE, 1);
 
         }
 

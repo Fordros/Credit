@@ -6,6 +6,7 @@ package com.fordros.entity;
 public class DebtTable {
     private Integer id; //номер по порядку
     private String date; // текущий день
+    private String creditLimit;
     private String debts; // задолженность на день
     private String pay; //платеж
     private String percentPrincipalDebt; // % основной задолженности на дату
@@ -28,6 +29,15 @@ public class DebtTable {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+
+    public String getCreditLimit() {
+        return creditLimit;
+    }
+
+    public void setCreditLimit(String creditLimit) {
+        this.creditLimit = creditLimit;
     }
 
     public String getDebts() {

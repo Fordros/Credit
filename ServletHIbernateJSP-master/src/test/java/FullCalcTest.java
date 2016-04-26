@@ -42,9 +42,9 @@ public class FullCalcTest {
         //если дата расчета равна дате платежа, тогда учитываем платеж
             if (creditDebt.isNowPaymentDate(amountDate.getTime(),payments)) {
                 pay = creditDebt.getAmount(amountDate.getTime(),payments);
-                debts = creditDebt.calcDebts(account.getBalance(), creditLimit, pay);
+                debts = creditDebt.calcDebts(account.getBalance(),  pay);
             } else {
-                debts = creditDebt.calcDebts(account.getBalance(),creditLimit, 0);
+                debts = creditDebt.calcDebts(account.getBalance(), 0);
             }
 
             int[][] percents = new int[200][200];
@@ -103,9 +103,9 @@ public class FullCalcTest {
             fullDebts = creditLimit - debts + sumPercentPrincipalDebt * (-1) + sumPercentPastDueDebts * (-1);
 
 
-            System.out.println(i + ". " +simpleDateFormat.format(amountDate.getTime()) + " - " + creditDebt.getFormatedAmount(debts) + " - " + pay
-                    + " - " + creditDebt.getFormatedAmount(percentPrincipalDebt) + " - " + creditDebt.getFormatedAmount(percentPastDueDebts) + " - " + isBilling
-                    + " - " + creditDebt.getFormatedAmount(sumPercentPrincipalDebt) + " - " + sumPercentPastDueDebts + " - " + creditDebt.getFormatedAmount(fullDebts ));
+            System.out.println(i + ". " +simpleDateFormat.format(amountDate.getTime()) + " - " + creditDebt.getFormattedAmount(debts) + " - " + pay
+                    + " - " + creditDebt.getFormattedAmount(percentPrincipalDebt) + " - " + creditDebt.getFormattedAmount(percentPastDueDebts) + " - " + isBilling
+                    + " - " + creditDebt.getFormattedAmount(sumPercentPrincipalDebt) + " - " + sumPercentPastDueDebts + " - " + creditDebt.getFormattedAmount(fullDebts ));
 
 
         }
