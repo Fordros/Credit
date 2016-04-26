@@ -66,9 +66,19 @@ public class CreditDebt {
         boolean result = false;
         for (int i = 0; i < payments.size(); i++) {
             datePayment.setTime(payments.get(i).getDatePayment());
-            result = (dateForCheck.get(Calendar.MONTH) == datePayment.get(Calendar.MONTH) &&
+            int dayCheck = dateForCheck.get(Calendar.DAY_OF_MONTH);
+            int monthCheck = dateForCheck.get(Calendar.MONTH);
+            int yearCheck = dateForCheck.get(Calendar.YEAR);
+
+            int dayPayment = datePayment.get(Calendar.DAY_OF_MONTH);
+            int monthPayment = datePayment.get(Calendar.MONTH);
+            int yearPayment = datePayment.get(Calendar.YEAR);
+
+            if(result = (dateForCheck.get(Calendar.MONTH) == datePayment.get(Calendar.MONTH) &&
                     dateForCheck.get(Calendar.YEAR) == datePayment.get(Calendar.YEAR) &&
-                    dateForCheck.get(Calendar.DAY_OF_MONTH) == datePayment.get(Calendar.DAY_OF_MONTH));
+                    dateForCheck.get(Calendar.DAY_OF_MONTH) == datePayment.get(Calendar.DAY_OF_MONTH))){
+                return result;
+            }
         }
         return result;
     }

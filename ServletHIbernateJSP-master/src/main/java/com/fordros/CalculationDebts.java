@@ -104,7 +104,7 @@ public class CalculationDebts {
 
 
 
-        int[][] percents = new int[200][200];
+        int[][] percents = new int[3][200];
 
 //---------------------------------------------------ОБЩИЙ ЦИКЛ
 
@@ -163,14 +163,18 @@ public class CalculationDebts {
             percents[1][i] = sumPercentPastDueDebts;
 
             //выбраный платеж с учетом биллинга
-            if(isBilling){
-                debts += pay + sumPercentPastDueDebts + sumPercentPrincipalDebt;
+            if(isBilling && i != 0){
+                debts += pay + percents[0][i-1] + percents[1][i-1];
             }else {
                 debts += pay;
+
             }
 
-            //Общая задолженность
-            fullDebts = debts + pay + sumPercentPrincipalDebt  + sumPercentPastDueDebts;
+            //общая задолженность
+            fullDebts = debts  + sumPercentPrincipalDebt  + sumPercentPastDueDebts;
+
+
+
 
             //формирование табл. для вывода
             DebtTable debtTable = new DebtTable();

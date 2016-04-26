@@ -53,7 +53,7 @@ public class ClientServlet extends HttpServlet {
             req.setAttribute("dateDog", simpleDateFormat.format(account.getDateDog()));
             req.setAttribute("creditLimit", creditDebt.getFormattedAmount(account.getCreditLimit()));
             req.setAttribute("percentDebitDue", account.getPercentDebtDue());
-            req.setAttribute("debts", calcDebts.get(calcDebts.size()-2).getFullDebts());
+            req.setAttribute("debts", calcDebts.get(calcDebts.size()-1).getFullDebts());
 
             req.getRequestDispatcher("client.jsp").forward(req, resp);
         }

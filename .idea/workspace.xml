@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95a6ab57-c3f1-411a-bcdd-5b77d9c1cd10" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/CalculationDebts.class" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/CalculationDebts.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/entity/CreditDebt.class" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/entity/CreditDebt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/entity/DebtTable.class" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/entity/DebtTable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/servlet/ClientServlet.class" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/classes/com/fordros/servlet/ClientServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/creditCalc/WEB-INF/classes/com/fordros/CalculationDebts.class" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/creditCalc/WEB-INF/classes/com/fordros/CalculationDebts.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/creditCalc/WEB-INF/classes/com/fordros/entity/CreditDebt.class" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/creditCalc/WEB-INF/classes/com/fordros/entity/CreditDebt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/creditCalc/WEB-INF/classes/com/fordros/entity/DebtTable.class" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/creditCalc/WEB-INF/classes/com/fordros/entity/DebtTable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/creditCalc/WEB-INF/classes/com/fordros/servlet/ClientServlet.class" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/creditCalc/WEB-INF/classes/com/fordros/servlet/ClientServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/test-classes/CreditDebtTest.class" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/test-classes/CreditDebtTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/test-classes/FullCalcTest.class" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/test-classes/FullCalcTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/CalculationDebts.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/CalculationDebts.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/CreditDebt.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/CreditDebt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/DebtTable.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/DebtTable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/servlet/ClientServlet.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/servlet/ClientServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/client.jsp" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/client.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/test/java/CreditDebtTest.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/test/java/CreditDebtTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/test/java/FullCalcTest.java" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/src/test/java/FullCalcTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/creditCalc/client.jsp" afterPath="$PROJECT_DIR$/ServletHIbernateJSP-master/target/creditCalc/client.jsp" />
     </list>
     <ignored path="Credit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,27 +59,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="client.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="client.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/client.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.769231">
-              <caret line="160" column="101" selection-start-line="160" selection-start-column="101" selection-end-line="160" selection-end-column="101" />
+            <state vertical-scroll-proportion="0.028571429">
+              <caret line="77" column="34" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="34" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="postgres.public.account" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/9d719688/4fccb991-bd69-47aa-a98e-a22b769948fe/postgres.public.account">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -104,7 +74,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="46" column="66" selection-start-line="46" selection-start-column="66" selection-end-line="46" selection-end-column="66" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/servlet/ClientServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+              <caret line="55" column="70" selection-start-line="55" selection-start-column="70" selection-end-line="55" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -123,20 +95,60 @@
         <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/CreditDebt.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalculationDebts.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Payment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Payment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <folding>
+                <element signature="e#1191#1192#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CalculationDebts.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/CalculationDebts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48235294">
-              <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="172" column="33" selection-start-line="172" selection-start-column="33" selection-end-line="172" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="postgres.public.payments" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/66ae2d25/4fccb991-bd69-47aa-a98e-a22b769948fe/postgres.public.payments">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="postgres.public.account" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/66ae2d25/4fccb991-bd69-47aa-a98e-a22b769948fe/postgres.public.account">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -185,15 +197,15 @@
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/js/js.js" />
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Account.java" />
-        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/servlet/ClientServlet.java" />
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/error.jsp" />
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/pom.xml" />
-        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/CreditDebt.java" />
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/DebtTable.java" />
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/test/java/FullCalcTest.java" />
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/test/java/CreditDebtTest.java" />
-        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/client.jsp" />
+        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/CreditDebt.java" />
         <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/CalculationDebts.java" />
+        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/servlet/ClientServlet.java" />
+        <option value="$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/client.jsp" />
       </list>
     </option>
   </component>
@@ -255,8 +267,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -302,8 +314,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -503,6 +513,8 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1251,6 +1263,7 @@
       <workItem from="1461310844418" duration="5986000" />
       <workItem from="1461418049483" duration="7574000" />
       <workItem from="1461562626222" duration="17695000" />
+      <workItem from="1461691325756" duration="4715000" />
     </task>
     <servers />
   </component>
@@ -1287,7 +1300,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157115000" />
+    <option name="totallyTimeSpent" value="161830000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1299,8 +1312,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1311,18 +1324,18 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15204236" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41013825" sideWeight="0.49546143" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4091521" sideWeight="0.49546143" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25945538" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25931233" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13842663" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13825215" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39770868" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39703903" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1348,30 +1361,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/CalculationDebts.java</url>
-          <line>44</line>
-          <properties />
-          <option name="timeStamp" value="70" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/CalculationDebts.java</url>
-          <line>76</line>
-          <properties />
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/CalculationDebts.java</url>
-          <line>127</line>
+          <line>178</line>
           <properties />
           <option name="timeStamp" value="76" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/CreditDebt.java</url>
-          <line>68</line>
-          <properties />
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="79" />
+      <option name="time" value="93" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1380,15 +1375,18 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/CalculationDebts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Account.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
-          <folding>
-            <element signature="e#2955#2956#0" expanded="true" />
-            <element signature="e#2995#2996#0" expanded="true" />
-            <element signature="e#4711#4712#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1418,11 +1416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="44" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="44" />
-          <folding>
-            <element signature="e#2955#2956#0" expanded="true" />
-            <element signature="e#2995#2996#0" expanded="true" />
-            <element signature="e#4711#4712#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1465,11 +1458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2955#2956#0" expanded="true" />
-            <element signature="e#2995#2996#0" expanded="true" />
-            <element signature="e#4711#4712#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1540,13 +1528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8880597">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Payment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1660,14 +1641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45960504">
-          <caret line="111" column="18" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/DAO/AccountDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5540309">
@@ -1684,19 +1657,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/client.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.769231">
-          <caret line="160" column="101" selection-start-line="160" selection-start-column="101" selection-end-line="160" selection-end-column="101" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/DebtTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.81646657">
           <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1704,31 +1668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.69982845">
           <caret line="28" column="37" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="37" />
-          <folding>
-            <element signature="e#4674#4675#0" expanded="true" />
-            <element signature="e#4711#4712#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/servlet/ClientServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9d719688/4fccb991-bd69-47aa-a98e-a22b769948fe/postgres.public.account">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1744,38 +1683,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="66" selection-start-line="46" selection-start-column="66" selection-end-line="46" selection-end-column="66" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/9d719688/4fccb991-bd69-47aa-a98e-a22b769948fe/postgres.public.payments">
+    <entry file="dbDummy://dbtable:/66ae2d25/4fccb991-bd69-47aa-a98e-a22b769948fe/postgres.public.account">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/Payment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="e#1191#1192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/66ae2d25/4fccb991-bd69-47aa-a98e-a22b769948fe/postgres.public.payments">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/entity/CreditDebt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/CalculationDebts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48235294">
-          <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="172" column="33" selection-start-line="172" selection-start-column="33" selection-end-line="172" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/java/com/fordros/servlet/ClientServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="70" selection-start-line="55" selection-start-column="70" selection-end-line="55" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServletHIbernateJSP-master/src/main/webapp/client.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.028571429">
+          <caret line="77" column="34" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>

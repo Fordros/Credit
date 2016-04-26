@@ -150,7 +150,7 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-body">
-                    <table class="table table-bordered table-hover table-condensed">
+                    <table class="table table-striped table-bordered table-hover table-condensed">
                         <caption class="text-center">Таблица задолженности по дням</caption>
                         <thead>
                         <tr class="info">
